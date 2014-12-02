@@ -6,8 +6,11 @@ require 'pry'
 
 # Get a 'personal access token' from here: https://github.com/settings/applications
 GH_TOKEN = "PERSONAL_ACCESS_TOKEN"
+
+# Set your organisation name here (the one you made your personal access token for)
 GH_ORGANISATION = "ORGANISATION_NAME"
 
+# 'rake upload' should be all you need to do here.
 desc "Upload and create books"
 task :upload do
   github = Github.new :oauth_token => GH_TOKEN
